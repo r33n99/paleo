@@ -100,7 +100,7 @@
       <v-card rounded="0" elevation="0" color="transparent">
         <v-card-text class="pa-0 mb-n2">
           <div class="video_container">
-            <video loop autoplay muted>
+            <video preload="auto" loop autoplay muted>
               <source src="/static/videos/kipish/kipish-rell.webm" type="video/webm">
             </video>
           </div>
@@ -119,7 +119,7 @@
       <v-card rounded="0" elevation="0" color="transparent">
         <v-card-text class="pa-0">
           <div class="video_container">
-            <video loop autoplay muted>
+            <video preload="auto" loop autoplay muted>
               <source src="/static/videos/kipish/kipish_prev.webm" type="video/webm">
             </video>
           </div>

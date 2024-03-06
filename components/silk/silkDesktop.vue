@@ -22,13 +22,15 @@
             <div class="d-flex">
               <div class="d-flex flex-column mr-10">
                 <span class="text-white opacity-70 font-weight-300 text-18">почта</span>
-                <a style="color: #ECEEEC" href="mailto:hello@paleo.studio" target="_blank" rel="noreferrer" class="font-text text-24 mt-4 text-decoration-none">
+                <a style="color: #ECEEEC" href="mailto:hello@paleo.studio" target="_blank" rel="noreferrer"
+                   class=" font-text text-24 mt-4 text-decoration-none">
                   hello@paleo.studio
                 </a>
               </div>
               <div class="d-flex flex-column cursor-pointer">
                 <span class="text-white opacity-70 font-weight-300 text-18">телеграмм</span>
-                <a style="color: #ECEEEC" href="https://t.me/paleostudio" target="_blank" rel="noreferrer" class="font-text text-24 mt-4 text-decoration-none">
+                <a style="color: #ECEEEC" href="https://t.me/paleostudio" target="_blank" rel="noreferrer"
+                   class=" font-text text-24 mt-4 text-decoration-none">
                   @paleostudio
                 </a>
               </div>
@@ -39,7 +41,7 @@
     </v-col>
     <v-col cols="12" class="pa-0">
       <div id="top" style="background: #0D0D0D">
-        <v-card color="transparent" elevation="0" class="rounded-0">
+        <v-card color="transparent" elevation="0" class="rounded-0 ">
           <div class="bg_container">
             <div class="bg_content page-wrapper d-flex flex-column justify-space-between">
               <div style="height: 100px">
@@ -55,7 +57,8 @@
                       <span style="color: #ababab" class="mx-10 text-uppercase nav-item cursor-pointer font-weight-300">О НАС</span>
                     </NuxtLink>
                     <NuxtLink class="text-decoration-none" :to="{ path: '/', hash: '#services' }">
-                      <span style="color: #ababab" class="mr-10 text-uppercase nav-item cursor-pointer font-weight-300">Услуги</span>
+                      <span style="color: #ababab"
+                            class="mr-10  text-uppercase nav-item cursor-pointer font-weight-300">Услуги</span>
                     </NuxtLink>
                     <NuxtLink class="text-decoration-none" :to="{ path: '/', hash: '#contacts' }">
                       <span style="color: #ababab" class="text-uppercase nav-item cursor-pointer font-weight-300">КОНТАКТЫ</span>
@@ -67,22 +70,24 @@
                 </v-card-text>
               </div>
               <v-card-text class="pa-0 d-flex justify-center align-end mt-14">
-                <img class="mac" src="/static/images/parcel/mac-parcel.webp" alt="mac-parcel">
+                <img class="bg_content mac" src="/static/images/silk/mac-silk.webp" alt="mac-silk">
+                <img class="bg_content__spiral" width="400" height="400" src="/static/images/spiral.webp" alt="comb">
+                <img class="bg_content__comb" width="400" height="400" src="/static/images/comb.webp" alt="spiral">
               </v-card-text>
             </div>
           </div>
         </v-card>
       </div>
       <div style="background: #FFFFFF">
-        <v-card elevation="0" rounded="0" color="transparent" class="page-wrapper pt-120 pb-120">
+        <v-card elevation="0" rounded="0" color="transparent" class="page-wrapper pt-120 pb-140">
           <v-card-text class="pa-0 px-16 mx-8">
             <span style="line-height: 18px" class="text-uppercase opacity-70 text-18 font-weight-300 text-black-grey">О ПРОЕКТЕ</span>
-            <div class="d-flex justify-space-between align-center mt-8">
-              <span style="line-height: 48px" class="text-black-grey text-40">Веб-приложение для логистики <br> по улучшению работы складов</span>
-              <!--              <div class="d-flex align-center">-->
-              <!--                <span class="text-uppercase text-24 text-black-grey mr-3">KIPISH</span>-->
-              <!--                <Icon name="f7:arrow-up-right" style="color: #222222;width: 24px;height: 24px"/>-->
-              <!--              </div>-->
+            <div class="d-flex justify-space-between align-end mt-8">
+              <span style="line-height: 48px" class="text-black-grey text-40">Платформа для гонок <br> ралли Silkway Rally </span>
+              <div class="d-flex align-center mb-n1">
+                <span class="text-uppercase text-24 text-black-grey mr-3 hover-item">SILKWAY RALLY</span>
+                <Icon name="f7:arrow-up-right" style="color: #222222;width: 24px;height: 24px"/>
+              </div>
             </div>
             <div class="d-flex justify-end mt-160">
               <v-row class="ma-0 pa-0">
@@ -90,7 +95,7 @@
                 </v-col>
                 <v-col class="pa-0 pl-10" cols="7">
                   <div>
-                    <span style="line-height: 30px" class="text-black-grey font-text  text-20">Компании требовались цифровые решения для оптимизации логистических процессов, включая приемку товаров на склад, консолидацию, а также удобное инструментарий для обеспечения упрощенной работы с B2B-клиентами</span>
+                    <span style="line-height: 30px" class="text-black-grey font-text  text-20">Каждый год компания проводит ралли, и возникла неотложная потребность в разработке эффективной системы для самостоятельной регистрации клиентами и их транспортных средств. Требовалась также удобная административная панель для легкого управления этим процессом</span>
                     <v-divider color="#000000" class="mt-10 mb-6"/>
                     <div class="d-flex flex-column">
                       <div class="d-flex ">
@@ -115,20 +120,11 @@
         <v-card-text class="pa-0">
           <div class="video_container">
             <video preload="auto" loop autoplay muted>
-              <source src="/static/videos/parcel.webm" type="video/webm">
+              <source src="/static/videos/silk.webm" type="video/webm">
             </video>
           </div>
         </v-card-text>
       </v-card>
-      <!--      <v-card rounded="0" elevation="0" color="transparent">-->
-      <!--        <v-card-text class="pa-0">-->
-      <!--          <div class="video_container">-->
-      <!--            <video loop autoplay muted>-->
-      <!--              <source src="/static/videos/kipish/kipish-rell.mp4" type="video/mp4">-->
-      <!--            </video>-->
-      <!--          </div>-->
-      <!--        </v-card-text>-->
-      <!--      </v-card>-->
       <div style="background: #FFFFFF">
         <v-card color="transparent" elevation="0" class="pt-120 pb-160 rounded-0 page-wrapper pb-140">
           <v-card-text class="pa-0 px-16 mx-8">
@@ -137,23 +133,23 @@
                 <span class="text-black-grey text-40">Задача</span>
               </v-col>
               <v-col class="pa-0" cols="7">
-                <span style="line-height: 30px" class="text-black-grey text-20  font-text">Разработать масштабируемое веб-приложение для комплексного управления логистическими процессами</span>
+                <span style="line-height: 30px" class="text-black-grey text-20  font-text">Спроектировать удобную платформу для регистрации и вести организационную работу для гонок ралли </span>
               </v-col>
             </v-row>
           </v-card-text>
         </v-card>
       </div>
       <div style="background: #F4F4F4" class="pb-140">
-        <v-card color="transparent" rounded="0" elevation="0" class="page-wrapper pt-120 pb-8">
-          <v-card-text class="pa-0 px-16 mx-8">
-            <div class="d-flex justify-center">
-              <div class="mr-16">
-                <img class="parcel-item" src="/static/images/parcel/parcel-1.webp" alt="parcel-1">
-              </div>
-              <div style="height: 700px" class="d-flex align-end mt-120">
-                <img class="parcel-item" src="/static/images/parcel/parcel-2.webp" alt="parcel-2">
-              </div>
-            </div>
+        <v-card color="transparent" rounded="0" elevation="0" class="page-wrapper pt-120">
+          <v-card-text class="pa-0 px-16 mx-8 d-flex justify-center">
+            <v-row class="pa-0 ma-0">
+              <v-col class="pa-0 ml-xl-10" cols="6">
+                <img class="silk-item" src="/static/images/silk/silk-1.webp" alt="silk-1">
+              </v-col>
+              <v-col cols="6" class="pa-0 d-flex align-end mt-120 ml-md-n16">
+                <img class="silk-item" src="/static/images/silk/silk-2.webp" alt="silk-2">
+              </v-col>
+            </v-row>
           </v-card-text>
         </v-card>
       </div>
@@ -162,59 +158,46 @@
           <v-card-text class="pa-0 px-16 mx-8">
             <v-row class="pa-0 ma-0">
               <v-col class="pa-0" cols="5">
-                <span class="text-black-grey text-40">Бизнес кабинет</span>
+                <span class="text-black-grey text-40">Решение</span>
               </v-col>
               <v-col class="pa-0" cols="7">
-                <span style="line-height: 30px" class="text-black-grey text-20  font-text">Бизнес-кабинет предлагает удобные инструменты для загрузки и обработки посылок через Excel-файлы, включая проверку на дубли, группировку и присвоение индивидуальных трекинг-номеров для каждой посылки</span>
+                <span style="line-height: 30px" class="text-black-grey text-20  font-text">Разработали платформу для регистрации участников и транспортных средств на ралли, включая модули для бухгалтерии, регистрации медиа и участников. Административная панель позволяет удобно управлять всеми аспектами мероприятия, обеспечивая эффективное администрирование и организацию</span>
               </v-col>
             </v-row>
           </v-card-text>
         </v-card>
       </div>
-      <div style="background: #F4F4F4" class="pb-140 pt-120">
-<!--        <swiper-->
-<!--            height="100%"-->
-<!--            :initial-slide="1"-->
-<!--            :effect="'coverflow'"-->
-<!--            :grabCursor="true"-->
-<!--            :centeredSlides="true"-->
-<!--            :slidesPerView="'auto'"-->
-<!--            :autoplay="{-->
-<!--      delay: 2500,-->
-<!--      disableOnInteraction: false,-->
-<!--    }"-->
-<!--            :coverflowEffect="{-->
-<!--    rotate: 0,-->
-<!--    stretch: -100,-->
-<!--    depth: 200,-->
-<!--    modifier: 1,-->
-<!--    slideShadows: false-->
-<!--  }"-->
-<!--            :modules="modules"-->
-<!--            class="mySwiper"-->
-<!--        >-->
-<!--          <swiper-slide style="height : 800px !important;width: 1105px !important;border-radius: 16px !important;"-->
-<!--                        v-for="slide in slides">-->
-<!--            <img :src="slide.path" alt="slide">-->
-<!--          </swiper-slide>-->
-<!--        </swiper>-->
-        <div class="d-flex flex-column align-center px-5" v-for="slide in slides">
-          <img width="1006" :src="slide.path" alt="slide">
-        </div>
-      </div>
-      <div style="background: #FFFFFF">
-        <v-card color="transparent" elevation="0" class="pt-120 pb-220 rounded-0 page-wrapper pb-140">
-          <v-card-text class="pa-0 px-16 mx-8">
-            <v-row class="pa-0 ma-0">
-              <v-col class="pa-0" cols="5">
-                <span class="text-black-grey text-40">Итог</span>
-              </v-col>
-              <v-col class="pa-0" cols="7">
-                <span style="line-height: 30px" class="text-black-grey text-20  font-text">Разработано масштабируемое веб-приложение для комплексного управления логистическими процессами, включающее интеграцию с системами отслеживания для обеспечения прозрачности и контроля</span>
-              </v-col>
-            </v-row>
-          </v-card-text>
-        </v-card>
+      <div style="background: #F4F4F4" class="pb-220 pt-120">
+        <swiper
+            height="100%"
+            :initial-slide="1"
+            :effect="'coverflow'"
+            :grabCursor="true"
+            :centeredSlides="true"
+            :slidesPerView="'auto'"
+            autoplay="true"
+            :pagination="{
+      clickable: true,
+    }"
+            :autoplay="{
+      delay: 2500,
+      disableOnInteraction: false,
+    }"
+            :coverflowEffect="{
+    rotate: 0,
+    stretch: -100,
+    depth: 100,
+    modifier: 1,
+    slideShadows: false
+  }"
+            :modules="modules"
+            class="mySwiper"
+        >
+          <swiper-slide style="height : 800px !important;width: 1006px !important;border-radius: 16px !important;"
+                        v-for="slide in slides">
+            <img class="silk-slide" :src="slide.path" alt="slide">
+          </swiper-slide>
+        </swiper>
       </div>
     </v-col>
   </v-row>
@@ -225,10 +208,13 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import {EffectCoverflow, Pagination} from 'swiper/modules';
-import slide from '~/static/images/parcel/parcel-slide.webp';
+import slideOne from '~/static/images/silk/slide-1.webp'
+import slideTwo from '~/static/images/silk/slide-2.webp'
+import slideThree from '~/static/images/silk/slide-3.webp'
+
 
 useHead({
-  titleTemplate: 'Paleo Studio | ParcelPoint'
+  titleTemplate: 'Paleo Studio | SilkWay'
 })
 useSeoMeta({
   ogTitle: 'Paleo Studio - Ваш партнер в веб-разработке',
@@ -236,12 +222,15 @@ useSeoMeta({
   ogDescription: 'Paleo Studio - это креативная веб-студия, специализирующаяся на разработке современных и функциональных веб-сайтов. Мы создаем уникальные и инновационные веб-решения, которые помогут вашему бизнесу выделиться в интернете.',
 })
 
+
 const {scrollToAnchor} = useAnchorScroll()
 
 const menu = ref(false);
 const showReel = ref(false)
 const slides = [
-  {name: 'slide', path: slide},
+  {name: 'slide', path: slideOne},
+  {name: 'slide', path: slideTwo},
+  {name: 'slide', path: slideThree},
 ];
 const projects = [
   {name: 'Kipish', path: '/kipish'},
@@ -254,7 +243,6 @@ const modules = [
 const toggleMenu = () => {
   menu.value = !menu.value;
 };
-
 </script>
 
 <style scoped>
@@ -347,7 +335,7 @@ const toggleMenu = () => {
   width: 100%;
   height: 820px;
   overflow: hidden;
-  background: url('~/static/images/kipish/bg-kipish.webp') bottom/cover no-repeat;
+  background: url('~/static/images/silk/bg-silk.svg') bottom/cover no-repeat;
 
   .bg_container__image {
     position: absolute;
@@ -360,20 +348,34 @@ const toggleMenu = () => {
   }
 }
 
-.img_container {
+.bg_content {
   position: relative;
-  width: 100%;
-  height: 1300px;
-  overflow: hidden;
-  background: url('~/static/images/parcel/mac2-parcel.webp') center/cover no-repeat;
+  height: 100%;
+  z-index: 1;
+  text-align: center;
+
+  .bg_content__spiral {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    z-index: -1;
+  }
+
+  .bg_content__comb {
+    position: absolute;
+    left: 0;
+    bottom: -150px;
+    z-index: 1;
+  }
 
   .show_reel {
+    z-index: 2;
     cursor: pointer;
     width: 160px;
     height: 160px;
     position: absolute;
-    right: 400px;
-    bottom: 400px;
+    left: 150px;
+    bottom: 200px;
     border-radius: 50%;
     background: #FFFFFF;
     display: flex;
@@ -381,13 +383,6 @@ const toggleMenu = () => {
     align-items: center;
     text-align: center;
   }
-}
-
-.bg_content {
-  position: relative;
-  height: 100%;
-  z-index: 1;
-  text-align: center;
 }
 
 .video_container {
@@ -400,32 +395,30 @@ const toggleMenu = () => {
   width: 100%;
   z-index: -1;
 }
-@media screen and (max-width: 1440px) {
-  .parcel-item {
-    width: 550px
-  }
+
+.silk-item {
+  width: 100%;
 }
-@media screen and (max-width: 1280px) {
-  .mac {
-    width: 850px;
-  }
-  .parcel-item {
-    width: 420px
-  }
-  .parcel-slide {
-    width: 800px;
+
+@media screen and (max-width: 1440px) {
+  .silk-item {
+    width: 650px
   }
 }
 
-@media screen and (max-width: 1080px) {
-  .mac {
-    width: 850px;
+@media screen and (max-width: 1264px) {
+  .bg_content {
+    .mac {
+      width: 850px;
+    }
   }
-  .parcel-item {
-    width: 350px
+
+  .silk-item {
+    width: 550px
   }
-  .parcel-slide {
-    width: 800px;
+
+  .silk-slide {
   }
 }
+
 </style>

@@ -54,36 +54,34 @@
               </div>
               <v-card-text class="pa-0 d-flex align-end justify-center">
                 <div class="d-flex align-center">
-                  <span class="text-uppercase text-16 text-white mr-2">Parcel Point</span>
+                  <span class="text-uppercase text-16 text-white mr-2">Silkway Rally</span>
                   <Icon name="f7:arrow-up-right" style="color: #FFFFFF;width: 18px;height: 18px"/>
                 </div>
               </v-card-text>
               <v-card-text class="pa-0 px-5 d-flex align-end justify-center">
-                <img class="mac" width="335" src="/static/images/parcel/mac-parcel.webp" alt="mac-parcel">
+                <img class="mac" width="335" src="/static/images/silk/mac-silk.webp" alt="mac-silk">
               </v-card-text>
             </div>
           </div>
         </v-card>
       </div>
       <div style="background: #FFFFFF">
-        <v-card elevation="0" rounded="0" color="transparent" class="pt-15 pb-80 page-wrapper">
+        <v-card elevation="0" rounded="0" color="transparent" class="page-wrapper pt-15 pb-80">
           <v-card-text class="pa-0 px-5">
             <span style="line-height: 14px" class="text-uppercase opacity-70 text-14 font-weight-300 text-black-grey">О ПРОЕКТЕ</span>
             <div class="d-flex justify-space-between align-center mt-4">
-              <span style="line-height: 24px" class="text-black-grey text-20">Веб-приложение для логистики по улучшению работы складов</span>
+              <span style="line-height: 24px" class="text-black-grey text-20">Платформа для гонок <br> ралли Silkway Rally </span>
             </div>
             <div class="d-flex flex-column mt-15">
-              <span style="line-height: 24px" class="text-black-grey font-text  text-16">Компании требовались цифровые решения для оптимизации логистических процессов, включая приемку товаров на склад, консолидацию, а также удобное инструментарий для обеспечения упрощенной работы с B2B-клиентами</span>
+              <span style="line-height: 24px" class="text-black-grey font-text  text-16">Каждый год компания проводит ралли, и возникла неотложная потребность в разработке эффективной системы для самостоятельной регистрации клиентами и их транспортных средств. Требовалась также удобная административная панель для легкого управления этим процессом</span>
               <v-divider color="#000000" class="mt-8 mb-5"/>
               <div class="d-flex flex-column">
-                <div class="d-flex flex-column">
                         <span class="text-black opacity-70 text-16 font-text "><span
                             class="mr-3">●</span>Проектирование</span>
-                  <span class="text-black opacity-70 text-16 font-text  my-4"><span
-                      class="mr-3">●</span>Серверная разработка</span>
-                  <span class="text-black opacity-70 text-16 font-text "><span
-                      class="mr-3">●</span>Клиентская разработка</span>
-                </div>
+                <span class="text-black opacity-70 text-16 font-text  my-4"><span
+                    class="mr-3">●</span>Серверная разработка</span>
+                <span class="text-black opacity-70 text-16 font-text "><span
+                    class="mr-3">●</span>Клиентская разработка</span>
               </div>
             </div>
           </v-card-text>
@@ -93,7 +91,7 @@
         <v-card-text class="pa-0">
           <div class="video_container">
             <video preload="auto" loop autoplay muted>
-              <source src="/static/videos/parcel.webm" type="video/webm">
+              <source src="/static/videos/silk.webm" type="video/webm">
             </video>
           </div>
         </v-card-text>
@@ -103,17 +101,17 @@
           <v-card-text class="pa-0 px-5">
             <div class="d-flex flex-column">
               <span style="line-height: 24px" class="text-black-grey text-20">Задача</span>
-              <span style="line-height: 22px" class="text-black-grey text-16  font-text mt-5">Разработать масштабируемое веб-приложение для комплексного управления логистическими процессами</span>
+              <span style="line-height: 22px" class="text-black-grey text-16  font-text mt-5">Спроектировать удобную платформу для регистрации и вести организационную работу для гонок ралли </span>
             </div>
           </v-card-text>
         </v-card>
       </div>
       <div style="background: #F4F4F4">
-        <v-card color="transparent" rounded="0" elevation="0" class="pt-80 pb-80 page-wrapper">
+        <v-card color="transparent" rounded="0" elevation="0" class="py-15 page-wrapper">
           <v-card-text class="pa-0 px-5">
-            <div class="d-flex flex-column align-center">
-              <img class="parcel-item" src="/static/images/parcel/parcel-1.webp" alt="parcel-1">
-              <img class="mt-10 parcel-item" src="/static/images/parcel/parcel-2.webp" alt="parcel-2">
+            <div class="d-flex flex-column">
+              <img src="/static/images/silk/silk-1.webp" alt="silk-1">
+              <img src="/static/images/silk/silk-2.webp" alt="silk-2">
             </div>
           </v-card-text>
         </v-card>
@@ -122,26 +120,16 @@
         <v-card color="transparent" elevation="0" class="pt-15 pb-80 rounded-0 page-wrapper">
           <v-card-text class="pa-0 px-5">
             <div class="d-flex flex-column">
-              <span style="line-height: 24px" class="text-black-grey text-20">Бизнес кабинет</span>
-              <span style="line-height: 22px" class="text-black-grey text-16  font-text mt-5">Бизнес-кабинет предлагает удобные инструменты для загрузки и обработки посылок через Excel-файлы, включая проверку на дубли, группировку и присвоение индивидуальных трекинг-номеров для каждой посылки</span>
+              <span style="line-height: 24px" class="text-black-grey text-20">Решение</span>
+              <span style="line-height: 22px" class="text-black-grey text-16  font-text mt-5">Разработали платформу для регистрации участников и транспортных средств на ралли, включая модули для бухгалтерии, регистрации медиа и участников. Административная панель позволяет удобно управлять всеми аспектами мероприятия, обеспечивая эффективное администрирование и организацию </span>
             </div>
           </v-card-text>
         </v-card>
       </div>
       <div style="background: #F4F4F4" class="pt-80 pb-80 px-5">
         <div class="d-flex flex-column" v-for="slide in slides">
-          <img :src="slide.path" alt="slide">
+          <<img :src="slide.path" alt="slide">
         </div>
-      </div>
-      <div style="background: #FFFFFF">
-        <v-card color="transparent" elevation="0" class="pt-80 pb-80 rounded-0 page-wrapper">
-          <v-card-text class="pa-0 px-5">
-            <div class="d-flex flex-column">
-              <span style="line-height: 24px" class="text-black-grey text-20">Итог</span>
-              <span style="line-height: 22px" class="text-black-grey text-16  font-text mt-5">Разработано масштабируемое веб-приложение для комплексного управления логистическими процессами, включающее интеграцию с системами отслеживания для обеспечения прозрачности и контроля</span>
-            </div>
-          </v-card-text>
-        </v-card>
       </div>
     </v-col>
   </v-row>
@@ -152,13 +140,15 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import {EffectCoverflow, Pagination} from 'swiper/modules';
-import slide from '~/static/images/parcel/parcel-slide.webp'
+import slideOne from '~/static/images/silk/slide-1.webp'
+import slideTwo from '~/static/images/silk/slide-2.webp'
+import slideThree from '~/static/images/silk/slide-3.webp'
+
 
 useHead({
-  titleTemplate: 'Paleo Studio | ParcelPoint'
+  titleTemplate: 'Paleo Studio | SilkWay'
 })
 useSeoMeta({
-  title: 'Paleo Studio - ParcelPoint',
   ogTitle: 'Paleo Studio - Ваш партнер в веб-разработке',
   description: 'Paleo Studio - это креативная веб-студия, специализирующаяся на разработке современных и функциональных веб-сайтов. Мы создаем уникальные и инновационные веб-решения, которые помогут вашему бизнесу выделиться в интернете.',
   ogDescription: 'Paleo Studio - это креативная веб-студия, специализирующаяся на разработке современных и функциональных веб-сайтов. Мы создаем уникальные и инновационные веб-решения, которые помогут вашему бизнесу выделиться в интернете.',
@@ -166,9 +156,11 @@ useSeoMeta({
 
 
 const menu = ref(false);
-const showReel = ref(false)
+const isMouseOver = ref(false)
 const slides = [
-  {name: 'slide', path: slide},
+  {name: 'slide', path: slideOne},
+  {name: 'slide', path: slideTwo},
+  {name: 'slide', path: slideThree},
 ];
 const projects = [
   {name: 'Kipish', path: '/kipish'},
@@ -182,10 +174,10 @@ const toggleMenu = () => {
   menu.value = !menu.value;
 };
 const handleMouseOver = () => {
-  showReel.value = true
+  isMouseOver.value = true
 }
 const handleMouseLeave = () => {
-  showReel.value = false
+  isMouseOver.value = false
 }
 </script>
 
@@ -279,7 +271,25 @@ const handleMouseLeave = () => {
   width: 100%;
   height: 480px;
   overflow: hidden;
-  background: url('~/static/images/kipish/bg-kipish.webp') bottom/cover no-repeat;
+  background: url('~/static/images/silk/bg-silk.svg') bottom/cover no-repeat;
+
+  .bg_container__image {
+    position: absolute;
+    background-position: top;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.bg_container_second {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  background: url('~/static/images/silk/bg-silk.svg') bottom/cover no-repeat;
 
   .bg_container__image {
     position: absolute;
@@ -295,24 +305,8 @@ const handleMouseLeave = () => {
 .img_container {
   position: relative;
   width: 100%;
-  height: 320px;
+  height: 1300px;
   overflow: hidden;
-  background: url('~/static/images/parcel/mac2-parcel.webp') center/cover no-repeat;
-
-  .show_reel {
-    cursor: pointer;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    top: 150px;
-    right: 50px;
-    border-radius: 50%;
-    background: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
 }
 
 .bg_content {
@@ -320,6 +314,35 @@ const handleMouseLeave = () => {
   height: 100%;
   z-index: 1;
   text-align: center;
+
+  .bg_content__spiral {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    z-index: -1;
+  }
+
+  .bg_content__comb {
+    position: absolute;
+    left: 0;
+    bottom: -150px;
+    z-index: 1;
+  }
+
+  .show_reel {
+    z-index: 2;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 40px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .video_container {
@@ -333,75 +356,35 @@ const handleMouseLeave = () => {
   width: 100%;
   z-index: -1;
 }
-
-.slide {
-  margin-bottom: 40px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
 @media screen and (max-width: 1024px) {
 .mac {
-  width: 500px;
+  width: 550px;
 }
-  .parcel-item {
-    width: 500px;
-  }
-  .parcel-slide {
-    width: 500px;
-  }
 }
 @media screen and (max-width: 735px) {
   .mac {
-    width: 400px;
+    width: 500px;
   }
 }
 @media screen and (max-width: 600px) {
   .mac {
-    width: 400px;
-  }
-  .parcel-item {
-    width: 450px;
-  }
-  .parcel-slide {
-    width: 400px;
+    width: 480px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .mac {
-    width: 350px;
-  }
-  .parcel-item {
     width: 420px;
-  }
-  .parcel-slide {
-    width: 380px;
   }
 }
 
 @media screen and (max-width: 450px) {
   .mac {
-    width: 320px;
-  }
-  .parcel-item {
-    width: 380px;
-  }
-  .parcel-slide {
-    width: 350px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .parcel-item {
-    width: 340px;
+    width: 360px;
   }
 }
 @media screen and (max-width: 375px) {
-  .parcel-item {
-    width: 335px;
-  }
-  .parcel-slide {
+  .mac {
     width: 335px;
   }
 }

@@ -15,7 +15,20 @@ export default defineNuxtConfig({
         '@pinia/nuxt',
         'nuxt-anchorscroll',
         '@nuxtjs/seo',
+        '@nuxt/image',
+        '@nuxtjs/device',
     ],
+    device: {
+        refreshOnResize: true,
+        defaultUserAgent: 'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.39 Mobile Safari/537.36'
+      },
+    image: {
+        dir:'static/images',
+        provider: 'ipx',
+        // twicpics: {
+        //   baseURL: 'https://images-paleo.studio/'
+        // }
+      },
     site: {
         hostname: process.env.NUXT_PUBLIC_SITE_URL,
         gzip: true,

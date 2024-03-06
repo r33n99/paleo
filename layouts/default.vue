@@ -3,7 +3,7 @@
     <v-main class="pa-0">
       <slot></slot>
     </v-main>
-    <v-footer v-if="windowWidth > 1024 && windowWidth !== null" color="#0D0D0D" class="pa-0 ma-0">
+    <v-footer v-if="$device.isDesktop" color="#0D0D0D" class="pa-0 ma-0">
       <v-card color="transparent" class="page-wrapper pt-120 pb-16" rounded="0" elevation="0">
         <v-card-text class="pa-0 px-16 mx-8 d-flex flex-column">
           <div class="d-flex justify-space-between align-center">
@@ -60,7 +60,7 @@
         </v-card-text>
       </v-card>
     </v-footer>
-    <v-footer v-if="windowWidth <= 1024 && windowWidth !== null" color="#0D0D0D" class="pa-0 ma-0">
+    <v-footer v-if="$device.isMobileOrTablet" color="#0D0D0D" class="pa-0 ma-0">
       <v-card color="transparent" class="page-wrapper pt-80 pb-12" rounded="0" elevation="0">
         <v-card-text class="pa-0 px-5 d-flex flex-column">
           <div>
@@ -114,25 +114,9 @@ const { scrollToAnchor, scrollToTop } = useAnchorScroll({
     }
   },
 })
-const store = useScreenStore()
-const windowWidth = computed(() => store.screenWidth);
 
+const { isMobile, isTablet, isDesktop, isMobileOrTablet, isDesktopOrTablet } = useDevice()
 
-onMounted(() => {
-  updateScreenSize();
-})
-
-onMounted(() => {
-  window.addEventListener('resize', updateScreenSize)
-})
-
-onUnmounted(() => {
-  window.removeEventListener('resize', updateScreenSize)
-})
-
-function updateScreenSize() {
-  store.updateScreenSize(window.innerWidth);
-}
 </script>
 
 <style scoped>

@@ -176,7 +176,7 @@
                   </div>
                 </div>
                 <div class="projects_block__video" style="border-radius: 16px;overflow: hidden">
-                  <video style="object-fit: cover" width="100%" height="100%" loop autoplay :controls="false" muted>
+                  <video preload="auto" style="object-fit: cover" width="100%" height="100%" loop autoplay :controls="false" muted>
                     <source src="/static/videos/kipish/kipish_prev.webm" type="video/webm">
                   </video>
                 </div>
@@ -200,20 +200,13 @@
                       </div>
                     </div>
                   </div>
-                  <video style="object-fit: cover" width="100%" height="100%" loop autoplay :controls="false" muted>
+                  <video preload="auto" style="object-fit: cover" width="100%" height="100%" loop autoplay :controls="false" muted>
                     <source src="/static/videos/parcel.webm" type="video/webm">
                   </video>
                 </div>
                 <div class="d-flex flex-column mt-7">
                   <span style="line-height: 25px" class="text-18 text-black-grey">Улучшаем работу складов в США</span>
                   <span style="line-height: 21px" class="text-black-grey  font-text text-15 mt-3 opacity-70">Cделали удобный личный кабинет для клиентов, а также ускорили отправку посылок за счет ускорения процессов.</span>
-                </div>
-              </div>
-              <div class="projects_block__card mt-10">
-                <img width="100%" src="/static/images/cover.webp" alt="cover">
-                <div class="d-flex flex-column mt-6">
-                  <span style="line-height: 21px" class="text-18 text-black-grey">Cover- Flow</span>
-                  <span style="line-height: 21px" class="text-black-grey  font-text text-15 mt-3 opacity-70">Инновационное решение для составления сопроводительных писем высшего уровня. Эта умная система учитывает не только формальные </span>
                 </div>
               </div>
               <div class="projects_block__card mt-10 cursor-pointer">
@@ -227,13 +220,20 @@
                       </div>
                     </div>
                   </div>
-                  <video style="object-fit: cover" width="100%" height="100%" loop autoplay :controls="false" muted>
+                  <video preload="auto" style="object-fit: cover" width="100%" height="100%" loop autoplay :controls="false" muted>
                     <source src="/static/videos/silk.webm" type="video/webm">
                   </video>
                 </div>
                 <div class="d-flex flex-column mt-7">
                   <span style="line-height: 21px" class="text-18 text-black-grey">Silkway Rally</span>
                   <span style="line-height: 21px" class="text-black-grey  font-text text-15 mt-3 opacity-70">Помогаем с платформой для регистрации участников и транспортных средств</span>
+                </div>
+              </div>
+              <div class="projects_block__card mt-10">
+                <img width="100%" src="/static/images/cover.webp" alt="cover">
+                <div class="d-flex flex-column mt-6">
+                  <span style="line-height: 21px" class="text-18 text-black-grey">Cover- Flow</span>
+                  <span style="line-height: 21px" class="text-black-grey  font-text text-15 mt-3 opacity-70">Инновационное решение для составления сопроводительных писем высшего уровня. Эта умная система учитывает не только формальные </span>
                 </div>
               </div>
 <!--              <div class="projects_block__card mt-10">-->
@@ -274,7 +274,7 @@
                     <span style="line-height: 21px" class="text-15 font-text  text-white opacity-70 mt-3">Разрабатываем веб-сайты любой сложности. От лендингов до корпоративных страниц, и интренет магазинов</span>
                   </div>
                   <div class="d-flex flex-column mt-6">
-                    <span class="text-16 text-white">от 100000 ₽</span>
+                    <span class="text-16 text-white">от 80000 ₽</span>
                     <span
                         class="text-14  font-text text-white opacity-70 mt-2">Срок работы индивидуальный</span>
                   </div>
@@ -285,7 +285,7 @@
                     <span style="line-height: 21px" class="text-15 font-text  text-white opacity-70 mt-3">Разрабатываем интуитивно понятные и удобные мобильные приложения, которые помогут вам установить прочную связь с вашей аудиторией</span>
                   </div>
                   <div class="d-flex flex-column mt-6">
-                    <span class="text-16 text-white">от 600000 ₽</span>
+                    <span class="text-16 text-white">от 400000 ₽</span>
                     <span
                         class="text-14  font-text text-white opacity-70 mt-2">Поддержка выпущенных продуктов</span>
                   </div>
@@ -296,7 +296,7 @@
                     <span style="line-height: 21px" class="text-15 font-text  text-white opacity-70 mt-3">Наша команда готова обеспечить непрерывную поддержку и обновление ваших цифровых продуктов, гарантируя их бесперебойную работу и соответствие текущим требованиям рынка</span>
                   </div>
                   <div class="d-flex flex-column mt-6">
-                    <span class="text-16 text-white">от 2100 ₽ / час</span>
+                    <span class="text-16 text-white">от 1700 ₽ / час</span>
                     <span
                         class="text-14  font-text text-white opacity-70 mt-2">Срок работы индивидуальный</span>
                   </div>
