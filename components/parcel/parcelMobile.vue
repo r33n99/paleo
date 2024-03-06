@@ -45,7 +45,7 @@
               <div style="height: 100px">
                 <v-card-text class="pt-10 pb-8 px-5 d-flex align-center justify-space-between">
                   <div @click="$router.push('/')" class="cursor-pointer">
-                    <img width="79" height="26" src="/assets/images/logo.svg" alt="logo">
+                    <img width="79" height="26" src="/static/images/logo.svg" alt="logo">
                   </div>
                   <div @click="toggleMenu" class="cursor-pointer">
                     <Icon name="humbleicons:bars" style="color: white;width: 24px;height: 24px"/>
@@ -59,7 +59,7 @@
                 </div>
               </v-card-text>
               <v-card-text class="pa-0 px-5 d-flex align-end justify-center">
-                <img class="mac" width="335" src="/assets/images/parcel/mac-parcel.webp" alt="mac-parcel">
+                <img class="mac" width="335" src="/static/images/parcel/mac-parcel.webp" alt="mac-parcel">
               </v-card-text>
             </div>
           </div>
@@ -93,7 +93,7 @@
         <v-card-text class="pa-0">
           <div class="video_container">
             <video loop autoplay muted>
-              <source src="/static/videos/parcel.mp4" type="video/mp4">
+              <source src="/static/videos/parcel.webm" type="video/webm">
             </video>
           </div>
         </v-card-text>
@@ -112,8 +112,8 @@
         <v-card color="transparent" rounded="0" elevation="0" class="pt-80 pb-80 page-wrapper">
           <v-card-text class="pa-0 px-5">
             <div class="d-flex flex-column align-center">
-              <img class="parcel-item" src="/assets/images/parcel/parcel-1.webp" alt="parcel-1">
-              <img class="mt-10 parcel-item" src="/assets/images/parcel/parcel-2.webp" alt="parcel-2">
+              <img class="parcel-item" src="/static/images/parcel/parcel-1.webp" alt="parcel-1">
+              <img class="mt-10 parcel-item" src="/static/images/parcel/parcel-2.webp" alt="parcel-2">
             </div>
           </v-card-text>
         </v-card>
@@ -152,9 +152,11 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import {EffectCoverflow, Pagination} from 'swiper/modules';
-import slide from '~/assets/images/parcel/parcel-slide.webp'
+import slide from '~/static/images/parcel/parcel-slide.webp'
 
-
+useHead({
+  titleTemplate: 'Paleo Studio | ParcelPoint'
+})
 useSeoMeta({
   title: 'Paleo Studio - ParcelPoint',
   ogTitle: 'Paleo Studio - Ваш партнер в веб-разработке',
@@ -277,7 +279,7 @@ const handleMouseLeave = () => {
   width: 100%;
   height: 480px;
   overflow: hidden;
-  background: url('~/assets/images/kipish/bg-kipish.webp') bottom/cover no-repeat;
+  background: url('~/static/images/kipish/bg-kipish.webp') bottom/cover no-repeat;
 
   .bg_container__image {
     position: absolute;
@@ -295,7 +297,7 @@ const handleMouseLeave = () => {
   width: 100%;
   height: 320px;
   overflow: hidden;
-  background: url('~/assets/images/parcel/mac2-parcel.webp') center/cover no-repeat;
+  background: url('~/static/images/parcel/mac2-parcel.webp') center/cover no-repeat;
 
   .show_reel {
     cursor: pointer;

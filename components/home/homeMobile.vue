@@ -6,7 +6,7 @@
           <v-card-text
               class="pa-0 pt-10 px-5 pb-8 d-flex align-center justify-space-between">
             <div @click="$router.push('/')" class="cursor-pointer">
-              <img width="79" height="26" src="/assets/images/logo.svg" alt="logo">
+              <img width="79" height="26" src="/static/images/logo.svg" alt="logo">
             </div>
 
             <div @click="toggleMenu" class="cursor-pointer">
@@ -97,7 +97,7 @@
                     <span class="text-uppercase text-16 font-weight-400">ОБСУДИТЬ ПРОЕКТ</span>
                   </v-btn>
                 </div>
-                <img style="position: absolute;z-index: -1;right: -150px" width="262" height="262" src="/assets/images/sphere.webp" alt="sphere">
+                <img style="position: absolute;z-index: -1;right: -150px" width="262" height="262" src="/static/images/sphere.webp" alt="sphere">
               </v-col>
             </v-row>
           </v-card-text>
@@ -111,7 +111,7 @@
               <div class="info_card d-flex flex-column">
                 <div class="d-flex">
                   <div class="info_card__img">
-                    <img  width="56" height="56" src="/assets/images/gem.webp" alt="gem">
+                    <img  width="56" height="56" src="/static/images/gem.webp" alt="gem">
                   </div>
                 </div>
                 <div class="d-flex flex-column mt-6">
@@ -122,7 +122,7 @@
               <div class="info_card d-flex flex-column mt-12">
                 <div class="d-flex">
                   <div class="info_card__img">
-                    <img width="56" height="56" src="/assets/images/comb.webp" alt="comb">
+                    <img width="56" height="56" src="/static/images/comb.webp" alt="comb">
                   </div>
                 </div>
                 <div class="d-flex flex-column mt-6">
@@ -133,7 +133,7 @@
               <div class="info_card d-flex flex-column mt-12">
                 <div class="d-flex">
                   <div class="info_card__img">
-                    <img width="56" height="56" src="/assets/images/plus.webp" alt="plus">
+                    <img width="56" height="56" src="/static/images/plus.webp" alt="plus">
                   </div>
                 </div>
                 <div class="d-flex flex-column mt-6">
@@ -144,7 +144,7 @@
               <div class="info_card d-flex flex-column mt-12">
                 <div class="d-flex">
                   <div class="info_card__img">
-                    <img width="56" height="56" src="/assets/images/plane.webp" alt="plane">
+                    <img width="56" height="56" src="/static/images/plane.webp" alt="plane">
                   </div>
                 </div>
                 <div class="d-flex flex-column mt-6">
@@ -176,8 +176,8 @@
                   </div>
                 </div>
                 <div class="projects_block__video" style="border-radius: 16px;overflow: hidden">
-                  <video style="object-fit: cover" width="100%" height="100%" loop autoplay :controls="false">
-                    <source src="/static/videos/kipish/kipish_prev.mp4" type="video/mp4">
+                  <video style="object-fit: cover" width="100%" height="100%" loop autoplay :controls="false" muted>
+                    <source src="/static/videos/kipish/kipish_prev.webm" type="video/webm">
                   </video>
                 </div>
               </div>
@@ -200,8 +200,8 @@
                       </div>
                     </div>
                   </div>
-                  <video style="object-fit: cover" width="100%" height="100%" loop autoplay :controls="false">
-                    <source src="/static/videos/parcel.mp4" type="video/mp4">
+                  <video style="object-fit: cover" width="100%" height="100%" loop autoplay :controls="false" muted>
+                    <source src="/static/videos/parcel.webm" type="video/webm">
                   </video>
                 </div>
                 <div class="d-flex flex-column mt-7">
@@ -210,7 +210,7 @@
                 </div>
               </div>
               <div class="projects_block__card mt-10">
-                <img width="100%" src="/assets/images/cover.webp" alt="cover">
+                <img width="100%" src="/static/images/cover.webp" alt="cover">
                 <div class="d-flex flex-column mt-6">
                   <span style="line-height: 21px" class="text-18 text-black-grey">Cover- Flow</span>
                   <span style="line-height: 21px" class="text-black-grey  font-text text-15 mt-3 opacity-70">Инновационное решение для составления сопроводительных писем высшего уровня. Эта умная система учитывает не только формальные </span>
@@ -227,8 +227,8 @@
                       </div>
                     </div>
                   </div>
-                  <video style="object-fit: cover" width="100%" height="100%" loop autoplay :controls="false">
-                    <source src="/static/videos/silk.mp4" type="video/mp4">
+                  <video style="object-fit: cover" width="100%" height="100%" loop autoplay :controls="false" muted>
+                    <source src="/static/videos/silk.webm" type="video/webm">
                   </video>
                 </div>
                 <div class="d-flex flex-column mt-7">
@@ -237,7 +237,7 @@
                 </div>
               </div>
 <!--              <div class="projects_block__card mt-10">-->
-<!--                <img width="100%" src="/assets/images/none.webp" alt="none">-->
+<!--                <img width="100%" src="/static/images/none.webp" alt="none">-->
 <!--                <div class="d-flex flex-column mt-6">-->
 <!--                  <span class="text-18 text-black-grey">Неизвестно</span>-->
 <!--                  <span class="text-black-grey  font-text text-15 mt-3 opacity-70">Оставили место для Вашего проекта</span>-->
@@ -323,7 +323,7 @@
                   </a>
                 </div>
                 <div class="contacts_block__img">
-                  <img width="140px" src="/assets/images/chain.webp" alt="chain">
+                  <img width="140px" src="/static/images/chain.webp" alt="chain">
                 </div>
               </div>
               <div class="contacts_block__card mt-8">
@@ -334,7 +334,7 @@
                   </a>
                 </div>
                 <div class="contacts_block__img_bott">
-                  <img width="140px" src="/assets/images/icosphere.webp" alt="chain">
+                  <img width="140px" src="/static/images/icosphere.webp" alt="chain">
                 </div>
               </div>
             </div>
@@ -346,9 +346,10 @@
 </template>
 
 <script setup>
-
+useHead({
+  titleTemplate: 'Paleo Studio'
+})
 useSeoMeta({
-  title: 'Paleo Studio',
   ogTitle: 'Paleo Studio - Ваш партнер в веб-разработке',
   description: 'Paleo Studio - это креативная веб-студия, специализирующаяся на разработке современных и функциональных веб-сайтов. Мы создаем уникальные и инновационные веб-решения, которые помогут вашему бизнесу выделиться в интернете.',
   ogDescription: 'Paleo Studio - это креативная веб-студия, специализирующаяся на разработке современных и функциональных веб-сайтов. Мы создаем уникальные и инновационные веб-решения, которые помогут вашему бизнесу выделиться в интернете.',

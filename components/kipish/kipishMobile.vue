@@ -8,7 +8,7 @@
               <div id="top" style="height: 100px">
                 <v-card-text class="pt-10 pb-8 px-5 d-flex align-center justify-space-between">
                   <div @click="$router.push('/')" class="cursor-pointer">
-                    <img width="79" height="26" src="/assets/images/logo.svg" alt="logo">
+                    <img width="79" height="26" src="/static/images/logo.svg" alt="logo">
                   </div>
                   <div @click="toggleMenu" class="cursor-pointer">
                     <Icon name="humbleicons:bars" style="color: white;width: 24px;height: 24px"/>
@@ -22,7 +22,7 @@
                 </div>
               </v-card-text>
               <v-card-text class="pa-0 px-5 d-flex align-end justify-center">
-                <img class="mac" width="350" src="/assets/images/kipish/mac-kipish.webp" alt="mac-kipish">
+                <img class="mac" width="350" src="/static/images/kipish/mac-kipish.webp" alt="mac-kipish">
               </v-card-text>
             </div>
           </div>
@@ -101,7 +101,7 @@
         <v-card-text class="pa-0 mb-n2">
           <div class="video_container">
             <video loop autoplay muted>
-              <source src="/static/videos/kipish/kipish-rell.mp4" type="video/mp4">
+              <source src="/static/videos/kipish/kipish-rell.webm" type="video/webm">
             </video>
           </div>
         </v-card-text>
@@ -120,7 +120,7 @@
         <v-card-text class="pa-0">
           <div class="video_container">
             <video loop autoplay muted>
-              <source src="/static/videos/kipish/kipish_prev.mp4" type="video/mp4">
+              <source src="/static/videos/kipish/kipish_prev.webm" type="video/webm">
             </video>
           </div>
         </v-card-text>
@@ -136,14 +136,14 @@
         </v-card>
       </div>
       <div style="background: #F4F4F4">
-        <img width="100%" src="/assets/images/kipish/kipish_kit_mobile.svg" alt="kipish_kit_mobile">
+        <img width="100%" src="/static/images/kipish/kipish_kit_mobile.svg" alt="kipish_kit_mobile">
       </div>
       <div style="background: #FFFFFF">
         <v-card color="transparent" elevation="0" class="pt-80 pb-80 rounded-0 page-wrapper">
           <v-card-text class="pa-0 px-5">
             <div class="d-flex flex-column">
               <span style="line-height: 24px" class="text-black-grey text-20">Дизайн</span>
-              <span style="line-height: 22px" class="text-black-grey text-16  font-text mt-5">Важным шагом является обновление дизайна, делая его более современным и адаптивным для устройств разного типа. При этом особое внимание уделяется улучшению навигации, чтобы пользователи могли легко находить интересующую информацию</span>
+              <span style="line-height: 22px" class="text-black-grey text-16  font-text mt-5">Важным шагом является обновление дизайна, делая его более современным и адаптивным для устройств разного типа.При этом особое внимание уделяется улучшению навигации, чтобы пользователи могли легко находить интересующую информацию</span>
             </div>
           </v-card-text>
         </v-card>
@@ -152,13 +152,13 @@
         <v-card color="transparent" rounded="0" elevation="0" class="page-wrapper pt-80 pb-80">
           <v-card-text class="pa-0 px-5 d-flex justify-center">
             <div class="d-flex flex-column mr-5">
-              <img class="kipish-item" width="100%" src="/assets/images/kipish/main.webp" alt="main">
-              <img  class="kipish-item" width="100%" src="/assets/images/kipish/estab-info.webp" alt="estab-info">
+              <img class="kipish-item" width="100%" src="/static/images/kipish/main.webp" alt="main">
+              <img  class="kipish-item" width="100%" src="/static/images/kipish/estab-info.webp" alt="estab-info">
             </div>
             <div class="d-flex flex-column">
-              <img class="kipish-item" width="100%" src="/assets/images/kipish/reports.webp" alt="estab-info">
-              <img class="kipish-item" width="100%" src="/assets/images/kipish/estab.webp" alt="estab-info">
-              <img class="kipish-item" width="100%" src="/assets/images/kipish/report.webp" alt="estab-info">
+              <img class="kipish-item" width="100%" src="/static/images/kipish/reports.webp" alt="estab-info">
+              <img class="kipish-item" width="100%" src="/static/images/kipish/estab.webp" alt="estab-info">
+              <img class="kipish-item" width="100%" src="/static/images/kipish/report.webp" alt="estab-info">
             </div>
           </v-card-text>
         </v-card>
@@ -183,7 +183,7 @@
           <v-card-text class="pa-0 px-5">
             <div class="d-flex flex-column">
               <span style="line-height: 24px" class="text-black-grey text-20">Итого</span>
-              <span style="line-height: 22px" class="text-black-grey text-16  font-text mt-5">По итогу - создали обновленный, гибкий и привлекательный веб-ресурс, который эффективно предоставляет информацию о городских событиях, новостях, а также предоставляет индивидуальные лендинги для заведений, что сделает сайт более интересным и удобным как для пользователей, так и для бизнеса</span>
+              <span style="line-height: 22px" class="text-black-grey text-16  font-text mt-5">По итогу - создали обновленный, гибкий и привлекательныйвеб-ресурс, который эффективно предоставляет информациюо городских событиях, новостях, а также предоставляет индивидуальные лендинги для заведений, что сделает сайт более интересным и удобным как для пользователей, так и для бизнеса</span>
             </div>
           </v-card-text>
         </v-card>
@@ -197,12 +197,13 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import {EffectCoverflow, Pagination} from 'swiper/modules';
-import slideOne from 'assets/images/kipish/slide-1.webp'
-import slideTwo from 'assets/images/kipish/slide-2.webp'
-import slideThree from 'assets/images/kipish/slide-3.webp'
-
+import slideOne from '~/static/images/kipish/slide-1.webp'
+import slideTwo from '~/static/images/kipish/slide-2.webp'
+import slideThree from '~/static/images/kipish/slide-3.webp'
+useHead({
+  titleTemplate: 'Paleo Studio | Kipish'
+})
 useSeoMeta({
-  title: 'Paleo Studio - Kipish',
   ogTitle: 'Paleo Studio - Ваш партнер в веб-разработке',
   description: 'Paleo Studio - это креативная веб-студия, специализирующаяся на разработке современных и функциональных веб-сайтов. Мы создаем уникальные и инновационные веб-решения, которые помогут вашему бизнесу выделиться в интернете.',
   ogDescription: 'Paleo Studio - это креативная веб-студия, специализирующаяся на разработке современных и функциональных веб-сайтов. Мы создаем уникальные и инновационные веб-решения, которые помогут вашему бизнесу выделиться в интернете.',
@@ -235,7 +236,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
-@use '@assets/scss/settings.scss';
+@use '@static/scss/settings.scss';
 .gradient-text {
   background: rgb(0, 0, 0);
   background: linear-gradient(70deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 30%);
@@ -325,7 +326,7 @@ onMounted(() => {
   width: 100%;
   height: 480px;
   overflow: hidden;
-  background: url('~/assets/images/kipish/bg-kipish.webp') bottom/cover no-repeat;
+  background: url('~/static/images/kipish/bg-kipish.webp') bottom/cover no-repeat;
 
   .bg_container__image {
     position: absolute;
@@ -361,7 +362,7 @@ onMounted(() => {
   width: 100%;
   height: 320px;
   overflow: hidden;
-  background: url('~/assets/images/kipish/mac2-kipish.webp') center/cover no-repeat;
+  background: url('~/static/images/kipish/mac2-kipish.webp') center/cover no-repeat;
 
   .show_reel {
     cursor: pointer;

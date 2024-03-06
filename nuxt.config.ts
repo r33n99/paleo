@@ -5,19 +5,42 @@ export default defineNuxtConfig({
     app: {
         buildAssetsDir: '/something/',
         head: {
-            link: [{ rel: 'icon', type: 'image/png', href: "/something/assets/images/logo-16.png" }]
+            link: [{ rel: 'icon', type: 'image/png', href: "/something/static/images/logo-16.png" }],
+            titleTemplate:'Paleo Studio'
         },
     },
     modules: [
         'nuxt-icon',
-        '@nuxt/image',
         'nuxt-swiper',
-        '@nuxtjs/robots',
         '@pinia/nuxt',
-        'nuxt-anchorscroll'
+        'nuxt-anchorscroll',
+        '@nuxtjs/seo',
+        '@nuxt/image'
     ],
     image: {
-        dir: 'assets'
+        dir:'static/images',
+        provider: 'ipx',
+        // twicpics: {
+        //   baseURL: 'https://images-paleo.studio/'
+        // }
+      },
+    site: {
+        hostname: process.env.NUXT_PUBLIC_SITE_URL,
+        gzip: true,
+        exclude: [
+          '/secret',
+          '/admin/**'
+        ],
+        routes: [
+          '/kipish',
+          '/silkway',
+          '/parcel'
+        ]
+    },
+    robots: {
+        sitemap: 'https://example.com/sitemap.xml',
+        enabled: true,
+        disallowNonIndexableRoutes: true,
     },
     build: {transpile: ['vuetify'],},
     css: [

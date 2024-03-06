@@ -45,7 +45,7 @@
               <div style="height: 100px">
                 <v-card-text class="pt-10 pb-8 px-5 d-flex align-center justify-space-between">
                   <div @click="$router.push('/')" class="cursor-pointer">
-                    <img width="79" height="26" src="/assets/images/logo.svg" alt="logo">
+                    <img width="79" height="26" src="/static/images/logo.svg" alt="logo">
                   </div>
                   <div @click="toggleMenu" class="cursor-pointer">
                     <Icon name="humbleicons:bars" style="color: white;width: 24px;height: 24px"/>
@@ -59,7 +59,7 @@
                 </div>
               </v-card-text>
               <v-card-text class="pa-0 px-5 d-flex align-end justify-center">
-                <img class="mac" width="335" src="/assets/images/silk/mac-silk.webp" alt="mac-silk">
+                <img class="mac" width="335" src="/static/images/silk/mac-silk.webp" alt="mac-silk">
               </v-card-text>
             </div>
           </div>
@@ -91,7 +91,7 @@
         <v-card-text class="pa-0">
           <div class="video_container">
             <video loop autoplay muted>
-              <source src="/static/videos/silk.mp4" type="video/mp4">
+              <source src="/static/videos/silk.webm" type="video/webm">
             </video>
           </div>
         </v-card-text>
@@ -110,8 +110,8 @@
         <v-card color="transparent" rounded="0" elevation="0" class="py-15 page-wrapper">
           <v-card-text class="pa-0 px-5">
             <div class="d-flex flex-column">
-              <img src="/assets/images/silk/silk-1.webp" alt="silk-1">
-              <img src="/assets/images/silk/silk-2.webp" alt="silk-2">
+              <img src="/static/images/silk/silk-1.webp" alt="silk-1">
+              <img src="/static/images/silk/silk-2.webp" alt="silk-2">
             </div>
           </v-card-text>
         </v-card>
@@ -140,13 +140,15 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import {EffectCoverflow, Pagination} from 'swiper/modules';
-import slideOne from '~/assets/images/silk/slide-1.webp'
-import slideTwo from '~/assets/images/silk/slide-2.webp'
-import slideThree from '~/assets/images/silk/slide-3.webp'
+import slideOne from '~/static/images/silk/slide-1.webp'
+import slideTwo from '~/static/images/silk/slide-2.webp'
+import slideThree from '~/static/images/silk/slide-3.webp'
 
 
+useHead({
+  titleTemplate: 'Paleo Studio | SilkWay'
+})
 useSeoMeta({
-  title: 'Paleo Studio - SilkWay',
   ogTitle: 'Paleo Studio - Ваш партнер в веб-разработке',
   description: 'Paleo Studio - это креативная веб-студия, специализирующаяся на разработке современных и функциональных веб-сайтов. Мы создаем уникальные и инновационные веб-решения, которые помогут вашему бизнесу выделиться в интернете.',
   ogDescription: 'Paleo Studio - это креативная веб-студия, специализирующаяся на разработке современных и функциональных веб-сайтов. Мы создаем уникальные и инновационные веб-решения, которые помогут вашему бизнесу выделиться в интернете.',
@@ -269,7 +271,7 @@ const handleMouseLeave = () => {
   width: 100%;
   height: 480px;
   overflow: hidden;
-  background: url('~/assets/images/silk/bg-silk.svg') bottom/cover no-repeat;
+  background: url('~/static/images/silk/bg-silk.svg') bottom/cover no-repeat;
 
   .bg_container__image {
     position: absolute;
@@ -287,7 +289,7 @@ const handleMouseLeave = () => {
   width: 100%;
   height: 320px;
   overflow: hidden;
-  background: url('~/assets/images/silk/bg-silk.svg') bottom/cover no-repeat;
+  background: url('~/static/images/silk/bg-silk.svg') bottom/cover no-repeat;
 
   .bg_container__image {
     position: absolute;

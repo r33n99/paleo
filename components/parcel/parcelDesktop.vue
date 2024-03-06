@@ -45,7 +45,7 @@
               <div style="height: 100px">
                 <v-card-text class="pt-10 pb-8 px-16 mx-8 d-flex align-center justify-space-between">
                   <div @click="$router.push('/')" class="cursor-pointer">
-                    <img width="107" height="26" src="/assets/images/logo.svg" alt="logo">
+                    <img width="107" height="26" src="/static/images/logo.svg" alt="logo">
                   </div>
                   <div>
                     <NuxtLink class="text-decoration-none" :to="{ path: '/', hash: '#projects' }">
@@ -67,7 +67,7 @@
                 </v-card-text>
               </div>
               <v-card-text class="pa-0 d-flex justify-center align-end mt-14">
-                <img class="mac" src="/assets/images/parcel/mac-parcel.webp" alt="mac-parcel">
+                <img class="mac" src="/static/images/parcel/mac-parcel.webp" alt="mac-parcel">
               </v-card-text>
             </div>
           </div>
@@ -115,7 +115,7 @@
         <v-card-text class="pa-0">
           <div class="video_container">
             <video loop autoplay muted>
-              <source src="/static/videos/parcel.mp4" type="video/mp4">
+              <source src="/static/videos/parcel.webm" type="video/webm">
             </video>
           </div>
         </v-card-text>
@@ -148,10 +148,10 @@
           <v-card-text class="pa-0 px-16 mx-8">
             <div class="d-flex justify-center">
               <div class="mr-16">
-                <img class="parcel-item" src="/assets/images/parcel/parcel-1.webp" alt="parcel-1">
+                <img class="parcel-item" src="/static/images/parcel/parcel-1.webp" alt="parcel-1">
               </div>
               <div style="height: 700px" class="d-flex align-end mt-120">
-                <img class="parcel-item" src="/assets/images/parcel/parcel-2.webp" alt="parcel-2">
+                <img class="parcel-item" src="/static/images/parcel/parcel-2.webp" alt="parcel-2">
               </div>
             </div>
           </v-card-text>
@@ -225,10 +225,12 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import {EffectCoverflow, Pagination} from 'swiper/modules';
-import slide from '~/assets/images/parcel/parcel-slide.webp'
+import slide from '~/static/images/parcel/parcel-slide.webp';
 
+useHead({
+  titleTemplate: 'Paleo Studio | ParcelPoint'
+})
 useSeoMeta({
-  title: 'Paleo Studio - ParcelPoint',
   ogTitle: 'Paleo Studio - Ваш партнер в веб-разработке',
   description: 'Paleo Studio - это креативная веб-студия, специализирующаяся на разработке современных и функциональных веб-сайтов. Мы создаем уникальные и инновационные веб-решения, которые помогут вашему бизнесу выделиться в интернете.',
   ogDescription: 'Paleo Studio - это креативная веб-студия, специализирующаяся на разработке современных и функциональных веб-сайтов. Мы создаем уникальные и инновационные веб-решения, которые помогут вашему бизнесу выделиться в интернете.',
@@ -345,7 +347,7 @@ const toggleMenu = () => {
   width: 100%;
   height: 820px;
   overflow: hidden;
-  background: url('~/assets/images/kipish/bg-kipish.webp') bottom/cover no-repeat;
+  background: url('~/static/images/kipish/bg-kipish.webp') bottom/cover no-repeat;
 
   .bg_container__image {
     position: absolute;
@@ -363,7 +365,7 @@ const toggleMenu = () => {
   width: 100%;
   height: 1300px;
   overflow: hidden;
-  background: url('~/assets/images/parcel/mac2-parcel.webp') center/cover no-repeat;
+  background: url('~/static/images/parcel/mac2-parcel.webp') center/cover no-repeat;
 
   .show_reel {
     cursor: pointer;

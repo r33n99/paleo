@@ -47,7 +47,7 @@
               <div style="height: 100px">
                 <v-card-text class="pt-10 pb-8 px-16 mx-8 d-flex align-center justify-space-between">
                   <div @click="$router.push('/')" class="cursor-pointer">
-                    <img width="107" height="26" src="/assets/images/logo.svg" alt="logo">
+                    <img width="107" height="26" src="/static/images/logo.svg" alt="logo">
                   </div>
                   <div>
                     <NuxtLink class="text-decoration-none" :to="{ path: '/', hash: '#projects' }">
@@ -70,9 +70,9 @@
                 </v-card-text>
               </div>
               <v-card-text class="pa-0 d-flex justify-center align-end mt-14">
-                <img class="bg_content mac" src="/assets/images/silk/mac-silk.webp" alt="mac-silk">
-                <img class="bg_content__spiral" width="400" height="400" src="/assets/images/spiral.webp" alt="comb">
-                <img class="bg_content__comb" width="400" height="400" src="/assets/images/comb.webp" alt="spiral">
+                <img class="bg_content mac" src="/static/images/silk/mac-silk.webp" alt="mac-silk">
+                <img class="bg_content__spiral" width="400" height="400" src="/static/images/spiral.webp" alt="comb">
+                <img class="bg_content__comb" width="400" height="400" src="/static/images/comb.webp" alt="spiral">
               </v-card-text>
             </div>
           </div>
@@ -120,7 +120,7 @@
         <v-card-text class="pa-0">
           <div class="video_container">
             <video loop autoplay muted>
-              <source src="/static/videos/silk.mp4" type="video/mp4">
+              <source src="/static/videos/silk.webm" type="video/webm">
             </video>
           </div>
         </v-card-text>
@@ -144,10 +144,10 @@
           <v-card-text class="pa-0 px-16 mx-8 d-flex justify-center">
             <v-row class="pa-0 ma-0">
               <v-col class="pa-0 ml-xl-10" cols="6">
-                <img class="silk-item" src="/assets/images/silk/silk-1.webp" alt="silk-1">
+                <img class="silk-item" src="/static/images/silk/silk-1.webp" alt="silk-1">
               </v-col>
               <v-col cols="6" class="pa-0 d-flex align-end mt-120 ml-md-n16">
-                <img class="silk-item" src="/assets/images/silk/silk-2.webp" alt="silk-2">
+                <img class="silk-item" src="/static/images/silk/silk-2.webp" alt="silk-2">
               </v-col>
             </v-row>
           </v-card-text>
@@ -208,12 +208,15 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import {EffectCoverflow, Pagination} from 'swiper/modules';
-import slideOne from '~/assets/images/silk/slide-1.webp'
-import slideTwo from '~/assets/images/silk/slide-2.webp'
-import slideThree from '~/assets/images/silk/slide-3.webp'
+import slideOne from '~/static/images/silk/slide-1.webp'
+import slideTwo from '~/static/images/silk/slide-2.webp'
+import slideThree from '~/static/images/silk/slide-3.webp'
 
+
+useHead({
+  titleTemplate: 'Paleo Studio | SilkWay'
+})
 useSeoMeta({
-  title: 'Paleo Studio - SilkWay',
   ogTitle: 'Paleo Studio - Ваш партнер в веб-разработке',
   description: 'Paleo Studio - это креативная веб-студия, специализирующаяся на разработке современных и функциональных веб-сайтов. Мы создаем уникальные и инновационные веб-решения, которые помогут вашему бизнесу выделиться в интернете.',
   ogDescription: 'Paleo Studio - это креативная веб-студия, специализирующаяся на разработке современных и функциональных веб-сайтов. Мы создаем уникальные и инновационные веб-решения, которые помогут вашему бизнесу выделиться в интернете.',
@@ -332,7 +335,7 @@ const toggleMenu = () => {
   width: 100%;
   height: 820px;
   overflow: hidden;
-  background: url('~/assets/images/silk/bg-silk.svg') bottom/cover no-repeat;
+  background: url('~/static/images/silk/bg-silk.svg') bottom/cover no-repeat;
 
   .bg_container__image {
     position: absolute;
