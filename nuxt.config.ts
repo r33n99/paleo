@@ -15,15 +15,7 @@ export default defineNuxtConfig({
         '@pinia/nuxt',
         'nuxt-anchorscroll',
         '@nuxtjs/seo',
-        '@nuxt/image'
     ],
-    image: {
-        dir:'static/images',
-        provider: 'ipx',
-        // twicpics: {
-        //   baseURL: 'https://images-paleo.studio/'
-        // }
-      },
     site: {
         hostname: process.env.NUXT_PUBLIC_SITE_URL,
         gzip: true,
